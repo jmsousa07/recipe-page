@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 54%, 90%);
+    color: hsl(14, 45%, 36%);
+    font-size: 16px;
+}
+
+h1, h2{
+    font-family: "Young Serif", sans serif;
+    font-weight: 300;
+}
+h2, .nutricao > h2,p{
+    padding-left: 15px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    max-height: 1540px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.195);
+}
+
+ul, ol{
+    display: flex;
+    flex-direction: column;
+}
+
+li{
+    margin: 5px;
+}
+
+li > strong{
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.header > img{
+    height: 300px;
+    width: 700px;
+    border-radius: 10px;
+}
+
+.header__text > h1{
+    color: hsl(24, 5%, 18%);
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.header__list{
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+    margin: 10px 15px;
+}
+
+.header__list > h2{
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    color: hsl(332, 51%, 32%);
+    padding: 20px 0 0 20px;
+}
+
+
+
+.tabela-simples {
+    width: 100%; /* Largura da tabela */
+    max-width: 600px; /* Largura máxima */
+    margin: 20px auto; /* Centraliza a tabela na página */
+    border-collapse: collapse; /* Remove espaços entre as células */
+    font-family: "Outfit", sans-serif;
+}
+
+/* Estilo das células */
+.tabela-simples td {
+    padding: 10px; /* Espaçamento interno */
+    border-bottom: 1px solid #ddd; /* Linha fina separando as linhas */
+}
+
+/* Estilo para a primeira coluna */
+.tabela-simples td:first-child {
+    width: 50%; /* Largura da primeira coluna */
+}
+
+/* Estilo para a segunda coluna */
+.tabela-simples td:last-child {
+    width: 45%; /* Largura da segunda coluna */
+    font-weight: 700;
+}
+
+/* Remover borda da última linha */
+.tabela-simples tr:last-child td {
+    border-bottom: none; /* Remove a linha da última linha */
+}
